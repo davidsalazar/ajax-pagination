@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024, maximum-scale=1.0" />
+	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script src="twitter_pager.js"></script>
+	<title>Sample Page 1</title>
+
+	<link rel="stylesheet" href="site.css" type="text/css" media="screen" charset="utf-8" />
+	<script type="text/javascript">
+		jQuery(function($) {
+			$.twitter_pager({
+				item_container_selector: '#items',
+				item_selector: '#items > div',
+				next_page_link_selector: '#next_page'
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="items">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+	</div>
+	
+	<div id="items_tail">
+		<div id="next_page_loading" style="display: none;"></div>
+		<a href="sample2.html" id="next_page">Next Page</a>
+	</div>
+
+</div>
+</body>
+</html>
