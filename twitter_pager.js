@@ -1,6 +1,6 @@
 (function($) {
 
-	$.twitter_pager = function(settings) {
+	$.ajax_pager = function(settings) {
 		var config = {
 			// Next page link, all next page requests will use the href attribute, until this element can no longer be found.  It will then be hidden.
 			next_page_link_selector: '#next_page',
